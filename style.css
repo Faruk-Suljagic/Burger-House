@@ -20,7 +20,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		margin: 0;
-		height: 825px;
+		height: 670px;
 		width: 1440px;
 		background-image: url(images/Rectangle.png);
 	}
@@ -30,7 +30,7 @@ body {
 		margin: 0;
 		padding: 0;
 		min-width: 1200px;
-		height: 725px;
+		height: 650px;
 	}
 	.navigationBar {
 		display: flex;
@@ -69,7 +69,10 @@ body {
 		background-image: url(images/Vector_Smart_Object.png);
 	}
 	.list {
-		width: 90%;
+		width: 100%;
+	}
+	.burgerMenu {
+		display: none;
 	}
 	.list ul {
 		display: flex;
@@ -89,10 +92,194 @@ body {
 		color: #3d2514;
 		letter-spacing: 4.17px;
 	}
+	.headerWrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 80%;
+	}
+	.burgerWeek {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 45%;
+		margin: 0 auto;
+		padding: 0;
+		height: 100%;
+		font-family: "Bebas Neue", cursive;
+	}
+	.burgerWeek ul {
+		width: 100%;
+		padding: 0;
+	}
+	.burgerWeek ul li {
+		margin: 0;
+		list-style: none;
+		width: 70%;
+	}
+	.burger {
+		font-size: 140px;
+		text-shadow: 4px 5px 0 #fee8bc;
+		margin: 0;
+		padding: 15px 0;
+		line-height: 0.7;
+	}
+	.week {
+		font-size: 115px;
+		text-shadow: 4px 5px 0 #fee8bc;
+		margin: 0;
+		padding: 0;
+	}
+	.borderDots {
+		padding: 10px 10px;
+		border: 2px dashed #3d2514;
+		font-size: 18px;
+		text-align: center;
+		font-weight: 400;
+		font-style: normal;
+		margin: 0;
+	}
+
+	.dealImage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 55%;
+		height: 100%;
+	}
+	.hamburgerMenu {
+		width: 80%;
+		height: 82%;
+		background-image: url(images/6-layers.png);
+		background-size: 90%;
+		background-repeat: no-repeat;
+	}
 }
-@media only screen and (min-width: 321px) {
-}
-@media only screen and (max-width: 320px) {
+
+@media only screen and (max-width: 767px) {
+	.list {
+		display: none;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: goldenrod;
+		height: 1000px;
+		width: 100%;
+	}
+	.header {
+		display: flex;
+		width: 100%;
+		height: 37%;
+		background-image: url(images/Rectangle.png);
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
+	.headerOffer {
+		width: 100%;
+		height: 100%;
+	}
+	.logo {
+		display: flex;
+		width: 60%;
+		height: 50%;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+	.contact {
+		display: none;
+	}
+	.burgerMenu {
+		width: 50%;
+		height: 30%;
+	}
+	.burgerMenu ul {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 10px;
+		width: 100%;
+	}
+	.burgerMenu > ul > li {
+		list-style: none;
+		width: 30px;
+		padding: 2px;
+		margin: 3px;
+		height: 3px;
+		background-color: black;
+	}
+	.navigationBar {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 20%;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 0;
+		flex-wrap: nowrap;
+	}
+	.headerWrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 100%;
+		height: 80%;
+	}
+	.burgerWeek {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 40%;
+		margin: 0 auto;
+		background-color: transparent;
+		position: relative;
+		position: sticky;
+	}
+	.burgerWeek ul {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.burgerWeek ul li {
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		list-style: none;
+		width: 80%;
+		font-family: "Bebas Neue", cursive;
+	}
+	.borderDots {
+		font-size: 17px;
+	}
+	.burger {
+		font-size: 40px;
+		font-weight: 400;
+	}
+	.week {
+		font-size: 35px;
+		font-weight: 400;
+	}
+	.dealImage {
+		display: flex;
+		background-position: bottom right;
+		width: 100%;
+		height: 60%;
+		background-image: url(images/6-layers.png);
+		background-size: 55%;
+		background-repeat: no-repeat;
+	}
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 }
