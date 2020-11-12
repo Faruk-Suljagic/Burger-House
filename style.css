@@ -1,0 +1,98 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1224px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		height: 4170px;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		height: 825px;
+		width: 1440px;
+		background-image: url(images/Rectangle.png);
+	}
+	.headerOffer {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		min-width: 1200px;
+		height: 725px;
+	}
+	.navigationBar {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.links {
+		display: flex;
+		flex-direction: column;
+		width: 478px;
+		align-items: flex-end;
+		justify-content: flex-end;
+		margin: 0;
+	}
+	.contact {
+		display: flex;
+		flex-direction: row;
+		font-family: "Bebas Neue", cursive;
+		font-size: 21px;
+		font-weight: 400;
+		width: 70%;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.contact p {
+		letter-spacing: 1px;
+		color: #3d2514;
+	}
+	.scooter {
+		width: 41px;
+		height: 33px;
+		margin: 5px;
+		background-image: url(images/Vector_Smart_Object.png);
+	}
+	.list {
+		width: 90%;
+	}
+	.list ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.list ul li {
+		font-family: "Bebas Neue", cursive;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		font-size: 21px;
+		font-weight: 400;
+		color: #3d2514;
+		letter-spacing: 4.17px;
+	}
+}
+@media only screen and (min-width: 321px) {
+}
+@media only screen and (max-width: 320px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
