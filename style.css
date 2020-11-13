@@ -1,285 +1,273 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.hero-container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/Rectangle.png);
+}
+.dealImage {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburgerMenu {
+  width: 70%;
+  min-width: 150px;
+}
+.header {
+  width: 100%;
+  padding: 20px;
+}
+.navigationBar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  margin: 0 auto;
+  font-family: 'Bebas Neue', cursive;
 }
 
-@media only screen and (min-width: 1224px) {
-	.container {
-		display: flex;
-		justify-content: center;
-		height: 4170px;
-		max-width: 1440px;
-		margin: 0 auto;
-	}
-	.header {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-		height: 670px;
-		width: 1440px;
-		background-image: url(images/Rectangle.png);
-	}
-	.headerOffer {
-		display: flex;
-		flex-direction: column;
-		margin: 0;
-		padding: 0;
-		min-width: 1200px;
-		height: 650px;
-	}
-	.navigationBar {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: space-between;
-		width: 100%;
-		margin: 0 auto;
-	}
-	.links {
-		display: flex;
-		flex-direction: column;
-		width: 478px;
-		align-items: flex-end;
-		justify-content: flex-end;
-		margin: 0;
-	}
-	.contact {
-		display: flex;
-		flex-direction: row;
-		font-family: "Bebas Neue", cursive;
-		font-size: 21px;
-		font-weight: 400;
-		width: 70%;
-		justify-content: flex-end;
-		align-items: center;
-	}
-	.contact p {
-		letter-spacing: 1px;
-		color: #3d2514;
-	}
-	.scooter {
-		width: 41px;
-		height: 33px;
-		margin: 5px;
-		background-image: url(images/Vector_Smart_Object.png);
-	}
-	.list {
-		width: 100%;
-	}
-	.burgerMenu {
-		display: none;
-	}
-	.list ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-start;
-		margin: 0 auto;
-		padding: 0;
-	}
-	.list ul li {
-		font-family: "Bebas Neue", cursive;
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		font-size: 21px;
-		font-weight: 400;
-		color: #3d2514;
-		letter-spacing: 4.17px;
-	}
-	.headerWrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: flex-start;
-		width: 100%;
-		height: 80%;
-	}
-	.burgerWeek {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: center;
-		width: 45%;
-		margin: 0 auto;
-		padding: 0;
-		height: 100%;
-		font-family: "Bebas Neue", cursive;
-	}
-	.burgerWeek ul {
-		width: 100%;
-		padding: 0;
-	}
-	.burgerWeek ul li {
-		margin: 0;
-		list-style: none;
-		width: 70%;
-	}
-	.burger {
-		font-size: 140px;
-		text-shadow: 4px 5px 0 #fee8bc;
-		margin: 0;
-		padding: 15px 0;
-		line-height: 0.7;
-	}
-	.week {
-		font-size: 115px;
-		text-shadow: 4px 5px 0 #fee8bc;
-		margin: 0;
-		padding: 0;
-	}
-	.borderDots {
-		padding: 10px 10px;
-		border: 2px dashed #3d2514;
-		font-size: 18px;
-		text-align: center;
-		font-weight: 400;
-		font-style: normal;
-		margin: 0;
-	}
-
-	.dealImage {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 55%;
-		height: 100%;
-	}
-	.hamburgerMenu {
-		width: 80%;
-		height: 82%;
-		background-image: url(images/6-layers.png);
-		background-size: 90%;
-		background-repeat: no-repeat;
-	}
+.headerOffer {
+  height: 100%;
+}
+.logo {
+  flex: 1;
+}
+.links {
+  flex: 2;
+  align-items: flex-end;
+  font-size: 19px;
+}
+.list {
+  margin: 0;
+  letter-spacing: 3.5px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+.list ul li {
+  padding: 2px 20px;
 }
 
-@media only screen and (max-width: 767px) {
-	.list {
-		display: none;
-	}
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background-color: goldenrod;
-		height: 1000px;
-		width: 100%;
-	}
-	.header {
-		display: flex;
-		width: 100%;
-		height: 37%;
-		background-image: url(images/Rectangle.png);
-		justify-content: flex-start;
-		align-items: center;
-		flex-direction: column;
-	}
-	.headerOffer {
-		width: 100%;
-		height: 100%;
-	}
-	.logo {
-		display: flex;
-		width: 60%;
-		height: 50%;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-		padding: 0;
-	}
-	.contact {
-		display: none;
-	}
-	.burgerMenu {
-		width: 50%;
-		height: 30%;
-	}
-	.burgerMenu ul {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		margin: 10px;
-		width: 100%;
-	}
-	.burgerMenu > ul > li {
-		list-style: none;
-		width: 30px;
-		padding: 2px;
-		margin: 3px;
-		height: 3px;
-		background-color: black;
-	}
-	.navigationBar {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		height: 20%;
-		align-items: center;
-		justify-content: space-between;
-		margin: 0 auto;
-		padding: 0;
-		flex-wrap: nowrap;
-	}
-	.headerWrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin: 0 auto;
-		width: 100%;
-		height: 80%;
-	}
-	.burgerWeek {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		width: 100%;
-		height: 40%;
-		margin: 0 auto;
-		background-color: transparent;
-		position: relative;
-		position: sticky;
-	}
-	.burgerWeek ul {
-		text-align: center;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	.burgerWeek ul li {
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		list-style: none;
-		width: 80%;
-		font-family: "Bebas Neue", cursive;
-	}
-	.borderDots {
-		font-size: 17px;
-	}
-	.burger {
-		font-size: 40px;
-		font-weight: 400;
-	}
-	.week {
-		font-size: 35px;
-		font-weight: 400;
-	}
-	.dealImage {
-		display: flex;
-		background-position: bottom right;
-		width: 100%;
-		height: 60%;
-		background-image: url(images/6-layers.png);
-		background-size: 55%;
-		background-repeat: no-repeat;
-	}
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  font-size: 17px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.scooter {
+  padding: 0px 10px;
+}
+.headerWrapper {
+  align-items: center;
+  display: flex;
+  min-height: 80vh;
+  justify-content: space-between;
+  font-family: 'Bebas Neue', cursive;
+}
+.burgerWeek {
+  display: flex;
+  /* background-color: rgb(236, 194, 140); */
+  height: auto;
+  width: 40%;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.burgerWeek ul {
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.burgerWeek ul li {
+  margin: 0;
+  line-height: 1.05;
+}
+.borderDots {
+  padding: 10px 0;
+  font-size: 3.5vh;
+  border: 2px dashed black;
+  text-align: center;
+}
+.burger {
+  font-size: 22vh;
+  text-shadow: 4px 5px 0 #fee8bc;
+}
+.week {
+  font-size: 19vh;
+  text-shadow: 4px 5px 0 #fee8bc;
+}
+.wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.padding1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80%;
+  border-radius: 7px;
+  width: 170vh;
+  margin: 0 auto;
+  font-family: 'Bebas Neue', cursive;
+}
+.todaysOffer {
+  position: relative;
+}
+.text-overlay1 {
+  padding: 0 15px;
+  margin: 0;
+  line-height: 1;
+  color: white;
+  position: absolute;
+}
+.chooseEnjoy {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0px 0px 0px 20px;
+}
+.morefun-moretaste {
+  position: relative;
+}
+.text-overlay2 {
+  position: absolute;
+  color: white;
+  padding: 15px 20px;
+  line-height: 0.5;
+  font-weight: 100;
+}
+.freshchili {
+  position: relative;
+}
+.text-overlay3 {
+  position: absolute;
+  color: white;
+  padding: 15px 20px;
+  line-height: 0.5;
+  font-weight: 100;
+}
+
+/* .lorem {
+src: s
+s
+s
+s
+s
+s
+s;	
+} */
+@media only screen and (min-width: 805px) {
+  .burgerMenu {
+    display: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .list {
+    display: none;
+  }
+  .logo {
+    width: 10%;
+  }
+  .contact {
+    display: none;
+  }
+  .hamburgerMenu {
+    margin: 0 auto;
+    width: 90%;
+    border-bottom: 1px solid red;
+  }
+  .dealImage {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .burgerWeek {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .navigationBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .burgerMenu {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .burgerMenu ul {
+    margin: 0;
+    list-style: none;
+  }
+  .burgerMenu ul li {
+    margin: 4px;
+    background-color: black;
+    height: 5px;
+    width: 40px;
+    padding: 2px;
+  }
+  .headerWrapper {
+    flex-wrap: wrap;
+  }
+  .burger {
+    font-size: 15vh;
+  }
+  .week {
+    font-size: 15vh;
+  }
+  .padding1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+  }
 }
