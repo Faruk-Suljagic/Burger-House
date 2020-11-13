@@ -190,6 +190,62 @@ img {
   font-weight: 400;
   color: #3d2514;
 }
+.wrapper2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.C-and-E {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+#CandEText {
+  font-size: 10vh;
+  margin: 0;
+}
+.C-and-E p {
+  font-size: 20px;
+}
+.threeBurgers {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.firstBurger,
+.secondBurger,
+.thirdBurger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.firstBurger h3,
+.secondBurger h3,
+.thirdBurger h3 {
+  font-size: 4vh;
+}
+.firstBurger p,
+.secondBurger p,
+.thirdBurger p {
+  width: 75%;
+  font-size: 16px;
+  text-align: center;
+}
 
 /* .lorem {
 src: s
@@ -288,5 +344,44 @@ s;
   }
   .alwaystastyburger {
     font-size: 2vh;
+  }
+  .C-and-E {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    text-shadow: 4px 5px 0 #fee8bc;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+  }
+  #CandEText {
+    font-size: 6.5vh;
+    margin: 0;
+  }
+  .C-and-E p {
+    font-size: 15px;
+  }
+
+  .firstBurger h3,
+  .secondBurger h3,
+  .thirdBurger h3 {
+    font-size: 2vh;
+  }
+  .firstBurger p,
+  .secondBurger p,
+  .thirdBurger p {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .firstBurger,
+  .thirdBurger {
+    color: #3d2514;
+  }
+  .thirdBurger {
+    text-align: right;
   }
 }
