@@ -27,12 +27,15 @@ img {
   justify-content: center;
   align-items: center;
 }
+.burgerMenu {
+  display: none;
+}
 .hamburgerMenu {
   width: 70%;
   min-width: 150px;
 }
 .header {
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
 }
 .navigationBar {
@@ -73,6 +76,7 @@ img {
 
 .contact {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   letter-spacing: 2px;
@@ -128,8 +132,7 @@ img {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
   padding: 10px 10px;
   margin: 0 auto;
 }
@@ -137,7 +140,6 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80%;
   border-radius: 7px;
   margin: 0 auto;
   font-family: 'Bebas Neue', cursive;
@@ -146,11 +148,13 @@ img {
   position: relative;
 }
 .text-overlay1 {
+  height: auto;
   padding: 0 15px;
   margin: 0;
-  line-height: 1;
+  line-height: 0.5;
   color: white;
   position: absolute;
+  font-size: 3vh;
 }
 .chooseEnjoy {
   display: flex;
@@ -169,6 +173,7 @@ img {
   padding: 0px 20px;
   line-height: 0.3;
   font-weight: 100;
+  font-size: 3vh;
 }
 .freshchili {
   position: relative;
@@ -179,11 +184,12 @@ img {
   padding: 15px 20px;
   line-height: 0.5;
   font-weight: 100;
+  font-size: 3.5vh;
 }
 .alwaystastyburger {
   font-family: 'Bebas Neue', cursive;
   font-size: 3vh;
-  width: 25vh;
+  width: 28vh;
   height: 100%;
   padding: 5px 10px;
   background-color: #ffc045;
@@ -198,6 +204,7 @@ img {
   align-items: center;
   background-color: white;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   margin: 0 auto;
 }
@@ -219,7 +226,7 @@ img {
 }
 .threeBurgers {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   align-items: center;
   margin: 0 auto;
   justify-content: center;
@@ -247,6 +254,79 @@ img {
   font-size: 16px;
   text-align: center;
 }
+.firstBurger button,
+.secondBurger button,
+.thirdBurger button {
+  padding: 10px 30px;
+  background-color: #bf2222;
+  border: none;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2vh;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  pointer-events: all;
+  cursor: pointer;
+}
+.upcoming-events-grid {
+  max-width: 80%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.upcoming-events {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+}
+.dots-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+.upcoming1 {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+.upcoming1 h3 {
+  font-size: 4.5vh;
+  margin: 0;
+}
+.upcoming1 h2 {
+  font-size: 5vh;
+}
+.upcoming1 p {
+  font-size: 2.5vh;
+}
+.dots {
+  height: 100%;
+}
+.upcomingBurger {
+  max-width: 100%;
+}
+.formInput {
+  height: 30vh;
+  max-width: 100%;
+  background-color: tomato;
+}
+/* .upcoming-events-grid .upcoming-events .upcoming2 img {
+} */
+
+/* .threeBurgers {
+  background-image: url(images1/Glow.png);
+  background-size: 180%;
+  background-position: center;
+} */
 
 /* .lorem {
 src: s
@@ -257,17 +337,7 @@ s
 s
 s;	
 } */
-@media only screen and (min-width: 805px) {
-  .burgerMenu {
-    display: none;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 804px) {
+@media only screen and (min-width: 805px) and (max-width: 1060px) {
   .list {
     display: none;
   }
@@ -384,15 +454,250 @@ s;
   .firstBurger p {
     width: 90%;
     font-size: 15px;
-    text-align: left;
+    text-align: center;
   }
   .thirdBurger p {
     width: 90%;
     font-size: 15px;
-    text-align: right;
+    text-align: center;
   }
   .firstBurger,
   .thirdBurger {
     color: #3d2514;
   }
+  .firstBurger button,
+  .secondBurger button,
+  .thirdBurger button {
+    padding: 5px 18px;
+    margin: 2px;
+    background-color: #bf2222;
+    border: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  .upcoming-events-grid {
+    max-width: 100%;
+  }
+  .upcoming-events {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .dots-column {
+    width: 80%;
+    align-items: center;
+  }
+  .upcoming1 {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+  .upcoming1 h2 {
+    margin: 0;
+  }
+  .upcoming2 {
+    width: 100%;
+  }
+  /* .upcoming1 p {
+    width: 100%;
+  } */
+}
+
+@media only screen and (max-width: 804px) {
+  .container {
+    justify-content: center;
+  }
+  .list {
+    display: none;
+  }
+  .logo {
+    width: 10%;
+  }
+  .contact {
+    display: none;
+  }
+  .hamburgerMenu {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .dealImage {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .burgerWeek {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .navigationBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .burgerMenu {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .burgerMenu ul {
+    margin: 0;
+    list-style: none;
+  }
+  .burgerMenu ul li {
+    margin: 4px;
+    background-color: black;
+    height: 5px;
+    width: 40px;
+    padding: 2px;
+  }
+  .headerWrapper {
+    flex-wrap: wrap;
+  }
+  .burger {
+    font-size: 12vh;
+  }
+  .week {
+    font-size: 12vh;
+  }
+  #padding1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Bebas Neue', cursive;
+  }
+  .chooseEnjoy {
+    align-items: center;
+    margin: 0 auto;
+  }
+  .alwaystastyburger {
+    font-size: 2vh;
+  }
+  .text-overlay2 {
+    font-size: 2.1vh;
+  }
+  .text-overlay3 {
+    font-size: 2.5vh;
+  }
+  .C-and-E {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+    text-shadow: 4px 5px 0 #fee8bc;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+  }
+  #CandEText {
+    font-size: 6.5vh;
+    margin: 0;
+  }
+  .C-and-E p {
+    font-size: 15px;
+  }
+  .firstBurger h3 {
+    font-size: 2vh;
+    text-align: center;
+  }
+  .secondBurger h3 {
+    font-size: 2vh;
+    text-align: center;
+  }
+  .thirdBurger h3 {
+    font-size: 2vh;
+    text-align: center;
+  }
+  .secondBurger p {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .firstBurger p {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .thirdBurger p {
+    width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+  .firstBurger,
+  .thirdBurger {
+    color: #3d2514;
+  }
+  .firstBurger button,
+  .thirdBurger button {
+    padding: 5px 18px;
+    margin: 2px;
+    background-color: #bf2222;
+    border: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  #button-two-of-three {
+    padding: 6px 15px;
+    margin: 2px;
+    background-color: #bf2222;
+    border: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  .upcoming-events-grid {
+    max-width: 100%;
+  }
+  .upcoming-events {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .dots-column {
+    width: 90%;
+  }
+  .upcoming1 {
+    padding: 0;
+    margin: 0;
+  }
+  .upcoming1 h2 {
+    margin: 0;
+  }
+  .upcoming2 {
+    width: 100%;
+  }
+  /* .upcoming1 p {
+    width: 100%;
+  } */
 }
