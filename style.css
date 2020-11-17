@@ -31,7 +31,7 @@ img {
   display: none;
 }
 .hamburgerMenu {
-  width: 70%;
+  width: 80%;
   min-width: 150px;
 }
 .header {
@@ -61,8 +61,9 @@ img {
 .list {
   margin: 0;
   letter-spacing: 3.5px;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 400;
+  color: #3d2514;
 }
 .list ul {
   display: flex;
@@ -82,49 +83,61 @@ img {
   letter-spacing: 2px;
   padding: 0 20px;
   font-size: 17px;
+  color: #3d2514;
 }
 .scooter {
   padding: 0px 10px;
 }
 .headerWrapper {
-  align-items: center;
   display: flex;
-  min-height: 80vh;
-  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 60vh;
+  justify-content: center;
+  margin: 0 auto;
   font-family: 'Bebas Neue', cursive;
 }
-.burgerWeek {
+.header-week {
+  width: 100%;
+}
+.borderDots-wrapper {
   display: flex;
+  flex-direction: column;
   /* background-color: rgb(236, 194, 140); */
   height: auto;
-  width: 40%;
+  width: 100%;
   align-items: flex-start;
   flex-wrap: nowrap;
 }
-.burgerWeek ul {
-  align-items: flex-start;
-  justify-content: flex-start;
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
-.burgerWeek ul li {
-  margin: 0;
-  line-height: 1.05;
-}
 .borderDots {
-  padding: 10px 0;
-  font-size: 3.5vh;
-  border: 2px dashed black;
+  color: #3d2514;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  line-height: 32.85px;
+  font-weight: 400;
+  margin: 0;
+  padding: 5px 10px;
+  border: 2px dashed #3d2514;
+  letter-spacing: normal;
+  text-transform: uppercase;
   text-align: center;
 }
 .burger {
-  font-size: 22vh;
+  font-size: 164px;
+  padding: 0;
+  margin: 0;
+  line-height: 10rem;
+  text-transform: uppercase;
+  text-align: left;
   text-shadow: 4px 5px 0 #fee8bc;
+  color: #3d2514;
 }
 .week {
-  font-size: 19vh;
+  font-size: 96px;
+  margin: 0;
+  text-transform: uppercase;
   text-shadow: 4px 5px 0 #fee8bc;
+  color: #3d2514;
+  line-height: 61.75px;
 }
 .wrapper1 {
   display: flex;
@@ -133,7 +146,7 @@ img {
   align-items: center;
   background-color: white;
   max-width: 100%;
-  padding: 10px 10px;
+  padding: 78px 10px 0;
   margin: 0 auto;
 }
 .padding1 {
@@ -142,6 +155,7 @@ img {
   justify-content: space-between;
   border-radius: 7px;
   margin: 0 auto;
+  width: 80%;
   font-family: 'Bebas Neue', cursive;
 }
 .todaysOffer {
@@ -150,17 +164,17 @@ img {
 .text-overlay1 {
   height: auto;
   padding: 0 15px;
-  margin: 0;
+  margin: 0 auto;
   line-height: 0.5;
   color: white;
   position: absolute;
-  font-size: 3vh;
+  font-size: 26px;
 }
 .chooseEnjoy {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 0px 40px;
 }
 .morefun-moretaste {
   position: relative;
@@ -173,7 +187,7 @@ img {
   padding: 0px 20px;
   line-height: 0.3;
   font-weight: 100;
-  font-size: 3vh;
+  font-size: 26px;
 }
 .freshchili {
   position: relative;
@@ -184,18 +198,20 @@ img {
   padding: 15px 20px;
   line-height: 0.5;
   font-weight: 100;
-  font-size: 3.5vh;
+  font-size: 26px;
 }
 .alwaystastyburger {
+  display: flex;
   font-family: 'Bebas Neue', cursive;
+  border: none;
   font-size: 3vh;
-  width: 28vh;
   height: 100%;
-  padding: 5px 10px;
+  padding: 5px 12px;
   background-color: #ffc045;
-  margin: 30px 0;
+  margin: 50px 0;
   font-weight: 400;
   color: #3d2514;
+  justify-content: center;
 }
 .wrapper2 {
   display: flex;
@@ -211,18 +227,22 @@ img {
 .C-and-E {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 70%;
+  width: 60%;
   text-align: center;
-  font-family: 'Bebas Neue', cursive;
 }
 #CandEText {
-  font-size: 10vh;
+  font-size: 100px;
   margin: 0;
+  font-weight: 400;
+  color: #3d2514;
+  font-family: 'Bebas Neue', cursive;
 }
 .C-and-E p {
-  font-size: 20px;
+  font-size: 17px;
+  color: #3d2514;
+  font-family: 'Montserrat', sans-serif;
 }
 .threeBurgers {
   display: flex;
@@ -245,14 +265,20 @@ img {
 .firstBurger h3,
 .secondBurger h3,
 .thirdBurger h3 {
-  font-size: 4vh;
+  font-size: 38px;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+  color: #3d2514;
 }
 .firstBurger p,
 .secondBurger p,
 .thirdBurger p {
-  width: 75%;
-  font-size: 16px;
+  width: 70%;
+  font-size: 17px;
+  font-weight: 400;
   text-align: center;
+  color: #3d2514;
 }
 .firstBurger button,
 .secondBurger button,
@@ -262,7 +288,7 @@ img {
   border: none;
   color: white;
   font-family: 'Bebas Neue', cursive;
-  font-size: 2vh;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.5px;
   pointer-events: all;
@@ -270,58 +296,158 @@ img {
 }
 .upcoming-events-grid {
   max-width: 80%;
-  width: 100%;
   margin-bottom: 50px;
-}
-.upcoming-events {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 20px;
-  margin: 0;
+  margin: 50px 0;
   width: 100%;
-  box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.17);
+  box-shadow: 19px 25px 43px rgba(0, 0, 0, 0.356);
 }
 .dots-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 50%;
 }
 .upcoming1 {
   display: flex;
+  justify-content: flex-start;
   text-align: left;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   padding: 20px;
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
+}
+
+.upcoming1 h3 {
+  font-size: 29px;
+  line-height: 45.83px;
+  margin: 0;
+  font-weight: 400;
+  color: #3d3d3d;
   font-family: 'Montserrat', sans-serif;
 }
-.upcoming1 h3 {
-  font-size: 4.5vh;
+.upcoming1 h1 {
+  font-size: 52px;
+  letter-spacing: 2px;
+  font-weight: 600;
   margin: 0;
-}
-.upcoming1 h2 {
-  font-size: 5vh;
+  line-height: 55.83px;
+  color: #3d2514;
+  font-family: 'Bebas Neue', cursive;
 }
 .upcoming1 p {
-  font-size: 2.5vh;
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 90%;
 }
+
 .dots {
-  height: 100%;
+  padding: 0 20px 15px;
 }
-.upcomingBurger {
-  max-width: 100%;
+.upcoming2 {
+  background-image: url(images1/Burger_Images.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  width: 50%;
 }
-.formInput {
+/* .formInput {
   height: 30vh;
   max-width: 100%;
-  background-color: tomato;
-}
-/* .upcoming-events-grid .upcoming-events .upcoming2 img {
 } */
-
+.bookYourTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  background-image: url(images1/2-layers.png);
+  background-position: right;
+  background-size: contain;
+}
+.bookYourTable h3 {
+  color: #3d2514;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  margin: 0;
+  line-height: 45.83px;
+  text-align: left;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 1.75px;
+  line-height: normal;
+}
+.bookYourTable h1 {
+  color: #3d2514;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 80px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 45.83px;
+  letter-spacing: 3px;
+  line-height: normal;
+  margin-top: 0;
+}
+.booking-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.form1 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  justify-content: center;
+  align-items: flex-end;
+}
+.form2 {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.booking-form form input {
+  width: 80%;
+  padding: 23px 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #bebebe;
+  background-color: transparent;
+}
+.form2 button {
+  padding: 15px 15px;
+  margin: 20px 0;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #bf2222;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-family: 'Bebas Neue', cursive;
+}
+.booking-form form input::placeholder {
+  font-family: 'Bebas Neue', cursive;
+  color: #3d3d3d;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-style: normal;
+}
 /* .threeBurgers {
   background-image: url(images1/Glow.png);
   background-size: 180%;
@@ -435,30 +561,36 @@ s;
     font-size: 15px;
   }
   .firstBurger h3 {
-    font-size: 2vh;
+    font-size: 38px;
     text-align: left;
+    font-weight: 400;
   }
   .secondBurger h3 {
-    font-size: 2vh;
-    text-align: center;
+    font-size: 38px;
+    text-align: left;
+    font-weight: 400;
   }
   .thirdBurger h3 {
-    font-size: 2vh;
-    text-align: right;
+    font-size: 38px;
+    text-align: left;
+    font-weight: 400;
   }
   .secondBurger p {
     width: 90%;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 400;
     text-align: center;
   }
   .firstBurger p {
     width: 90%;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 400;
     text-align: center;
   }
   .thirdBurger p {
     width: 90%;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 400;
     text-align: center;
   }
   .firstBurger,
@@ -505,6 +637,9 @@ s;
   .upcoming2 {
     width: 100%;
   }
+  .booking-form {
+    width: 80%;
+  }
   /* .upcoming1 p {
     width: 100%;
   } */
@@ -517,21 +652,27 @@ s;
   .list {
     display: none;
   }
+  .header {
+    margin: 0;
+  }
   .logo {
-    width: 10%;
+    width: 15%;
   }
   .contact {
     display: none;
   }
   .hamburgerMenu {
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
   }
   .dealImage {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  .borderDots {
+    margin-top: 15px;
   }
   .burgerWeek {
     margin: 0 auto;
@@ -557,6 +698,9 @@ s;
     margin: 0;
     list-style: none;
   }
+  .borderDots {
+    line-height: 22px;
+  }
   .burgerMenu ul li {
     margin: 4px;
     background-color: black;
@@ -569,6 +713,7 @@ s;
   }
   .burger {
     font-size: 12vh;
+    line-height: 7rem;
   }
   .week {
     font-size: 12vh;
@@ -590,6 +735,7 @@ s;
   }
   .alwaystastyburger {
     font-size: 2vh;
+    margin: 30px;
   }
   .text-overlay2 {
     font-size: 2.1vh;
@@ -616,36 +762,48 @@ s;
   .C-and-E p {
     font-size: 15px;
   }
+  #threeBurgers {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    color: #3d2514;
+  }
   .firstBurger h3 {
-    font-size: 2vh;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
   }
   .secondBurger h3 {
-    font-size: 2vh;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
   }
   .thirdBurger h3 {
-    font-size: 2vh;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
   }
   .secondBurger p {
-    width: 90%;
-    font-size: 15px;
+    width: 70%;
+    font-size: 17px;
     text-align: center;
   }
   .firstBurger p {
-    width: 90%;
-    font-size: 15px;
+    width: 70%;
+    font-weight: 400x;
+    font-size: 17px;
     text-align: center;
   }
   .thirdBurger p {
-    width: 90%;
-    font-size: 15px;
+    width: 70%;
+    font-size: 17px;
     text-align: center;
+    font-weight: 400;
   }
   .firstBurger,
   .thirdBurger {
     color: #3d2514;
+    margin: 60px 0;
   }
   .firstBurger button,
   .thirdBurger button {
@@ -655,49 +813,153 @@ s;
     border: none;
     color: white;
     font-family: 'Bebas Neue', cursive;
-    font-size: 2vh;
+    font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.5px;
     pointer-events: all;
     cursor: pointer;
   }
   #button-two-of-three {
-    padding: 6px 15px;
+    padding: 5px 18px;
     margin: 2px;
     background-color: #bf2222;
     border: none;
     color: white;
     font-family: 'Bebas Neue', cursive;
-    font-size: 2vh;
+    font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.5px;
     pointer-events: all;
     cursor: pointer;
   }
   .upcoming-events-grid {
-    max-width: 100%;
-  }
-  .upcoming-events {
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
-    padding: 10px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
   }
   .dots-column {
     width: 90%;
   }
   .upcoming1 {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
-  .upcoming1 h2 {
-    margin: 0;
+  .upcoming1 h3 {
+    font-size: 25px;
+    line-height: 55.83px;
   }
+  .upcoming1 h1 {
+    font-size: 52px;
+  }
+  .upcoming1 p {
+    font-size: 17px;
+  }
+
   .upcoming2 {
+    background-image: url(images1/Burger_Images.png);
+    background-size: 100%;
     width: 100%;
+    height: 30vh;
   }
-  /* .upcoming1 p {
+  .upcomingBurger {
+    border-radius: 5px;
+  }
+  .bookYourTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-  } */
+    padding: 50px 0;
+    background-image: url(images1/2-layers.png);
+    background-position: right;
+    background-size: 135%;
+  }
+  .bookYourTable h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .bookYourTable h1 {
+    font-size: 45px;
+  }
+  .booking-form {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+  }
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .booking-form form input {
+    width: 80%;
+    padding: 15px 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+    background-color: transparent;
+  }
+  .form2 button {
+    padding: 9px 15px;
+    margin: 20px 0;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #bf2222;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .padding1 {
+    width: 65%;
+    padding: 0;
+  }
+  .booking-form {
+    width: 50%;
+  }
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .form2 {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .booking-form form input {
+    width: 80%;
+    padding: 23px 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+    background-color: transparent;
+  }
+  .form2 button {
+    padding: 15px 15px;
+    margin: 20px 0;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 28px;
+    color: white;
+    background-color: #bf2222;
+    font-family: 'Bebas Neue', cursive;
+  }
 }
