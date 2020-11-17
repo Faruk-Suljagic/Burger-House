@@ -342,6 +342,7 @@ img {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   width: 90%;
+  color: #3d3d3d;
 }
 
 .dots {
@@ -490,13 +491,21 @@ img {
 }
 .footerLocation div {
   display: flex;
+  text-align: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin: 0;
   letter-spacing: 0.5px;
 }
 .footerLocation img {
-  padding: 5px 15px;
+  padding: 5px 15px 5px 0;
+}
+.location,
+.email {
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .footer2 {
   display: flex;
@@ -531,7 +540,7 @@ s
 s
 s;	
 } */
-@media only screen and (min-width: 805px) and (max-width: 1060px) {
+@media only screen and (min-width: 830px) and (max-width: 1060px) {
   .list {
     display: none;
   }
@@ -713,7 +722,7 @@ s;
   } */
 }
 
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 829px) {
   .container {
     justify-content: center;
   }
@@ -988,6 +997,47 @@ s;
     letter-spacing: 1px;
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
+  }
+  .burgerHouse-footer {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 10px;
+    padding: 5px;
+  }
+  .footerText {
+    padding: 0;
+  }
+  .footer1 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footerLocation {
+    align-items: flex-start;
+    font-size: 16px;
+  }
+  .footerLocation div {
+    width: 100%;
+  }
+  .footer2 {
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 100%;
+  }
+  .copyRight {
+    font-size: 15px;
+  }
+  .socialMedia {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .socialMedia i {
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+  .footerLocation img {
+    padding: 5px 10px 5px 0;
   }
 }
 @media only screen and (min-width: 1499px) {
