@@ -41,7 +41,7 @@ img {
 .navigationBar {
   display: flex;
   flex-direction: row;
-
+  max-width: 100%;
   justify-content: space-around;
   margin: 0 auto;
   font-family: 'Bebas Neue', cursive;
@@ -54,7 +54,7 @@ img {
   flex: 1;
 }
 .links {
-  flex: 2;
+  flex: 1;
   align-items: flex-end;
   font-size: 19px;
 }
@@ -72,7 +72,7 @@ img {
   list-style: none;
 }
 .list ul li {
-  padding: 2px 20px;
+  padding: 2px 15px;
 }
 
 .contact {
@@ -92,7 +92,7 @@ img {
   display: flex;
   align-items: center;
   min-height: 60vh;
-  justify-content: center;
+  justify-content: space-between;
   margin: 40px auto;
   font-family: 'Bebas Neue', cursive;
 }
@@ -143,7 +143,7 @@ img {
   align-items: center;
   background-color: white;
   max-width: 100%;
-  padding: 78px 10px 0;
+  padding: 78px 15px;
   margin: 0 auto;
 }
 .padding1 {
@@ -152,7 +152,6 @@ img {
   justify-content: center;
   border-radius: 7px;
   margin: 0 auto;
-  width: 100%;
   font-family: 'Bebas Neue', cursive;
 }
 .todaysOffer {
@@ -188,7 +187,7 @@ img {
   position: relative;
 }
 .text-overlay2 {
-  padding: 30px 68px 414px 29px;
+  padding: 30px 29px;
   margin: 0;
   position: absolute;
   color: white;
@@ -215,7 +214,7 @@ img {
 .text-overlay3 {
   position: absolute;
   color: white;
-  padding: 29px 305px 106px 29px;
+  padding: 29px 29px;
   line-height: 0.5;
   font-weight: 100;
   font-family: 'Bebas Neue', cursive;
@@ -285,7 +284,7 @@ img {
 .threeBurgers {
   display: flex;
   max-width: 100%;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 auto;
   justify-content: center;
   padding: 30px 20px;
@@ -419,6 +418,7 @@ img {
   background-image: url(images1/2-layers.png);
   background-position: right;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .bookYourTable h3 {
   color: #3d2514;
@@ -484,6 +484,7 @@ img {
   border-radius: 5px;
   background-color: #bf2222;
   color: white;
+  border: none;
   letter-spacing: 1px;
   font-size: 24px;
   font-family: 'Bebas Neue', cursive;
@@ -502,9 +503,8 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  height: 35rem;
   margin: 50px 40px;
-  padding: 25px;
+  padding: 20px;
   background-image: url(images1/Place_Your_Design_Here_\(Double_Click_to_Edit\).png);
   background-size: cover;
 }
@@ -513,7 +513,7 @@ img {
   flex-direction: row;
   text-align: left;
   width: 100%;
-  height: 90%;
+  height: 100%;
   color: white;
   font-family: 'Bebas Neue', cursive;
 }
@@ -528,7 +528,7 @@ img {
   font-size: 17px;
   font-weight: 100;
   line-height: 25px;
-  padding: 0 16px 0;
+  padding: 0 0 16px 0;
   font-family: 'Montserrat', sans-serif;
 }
 .footerLocation {
@@ -545,7 +545,7 @@ img {
   text-align: center;
   align-items: center;
   justify-content: flex-start;
-  width: 60%;
+  width: 73%;
   letter-spacing: 0.5px;
 }
 .footerLocation img {
@@ -835,6 +835,9 @@ s;
     align-items: center;
     justify-content: center;
   }
+  .dots {
+    padding: 10px 0;
+  }
   .borderDots {
     margin-top: 15px;
   }
@@ -944,7 +947,6 @@ s;
     width: 80%;
     padding: 0;
     margin: 0 auto;
-    text-shadow: 4px 5px 0 #fee8bc;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
   }
@@ -1165,6 +1167,21 @@ s;
   }
 }
 @media only screen and (min-width: 1499px) {
+  .logo {
+    flex: none;
+  }
+  .links {
+    flex: none;
+  }
+  .navigationBar {
+    justify-content: space-between;
+  }
+  .burger-week {
+    padding-right: 50px;
+  }
+  .headerWrapper {
+    justify-content: space-around;
+  }
   .padding1 {
     width: 65%;
     padding: 0;
@@ -1203,5 +1220,8 @@ s;
     color: white;
     background-color: #bf2222;
     font-family: 'Bebas Neue', cursive;
+  }
+  .socialMedia i {
+    font-size: 30px;
   }
 }
