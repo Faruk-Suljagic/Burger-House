@@ -14,10 +14,6 @@ img {
   width: 100%;
 }
 .container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
   background-image: url(images/Rectangle.png);
 }
 .dealImage {
@@ -68,6 +64,7 @@ img {
   flex-direction: row;
   justify-content: flex-end;
   list-style: none;
+  margin: 0;
 }
 .list ul li {
   padding: 2px 15px;
@@ -141,7 +138,7 @@ img {
   align-items: center;
   background-color: white;
   max-width: 100%;
-  padding: 78px 15px 20px;
+  padding: 78px 15px 0 20px;
   margin: 0 auto;
 }
 .padding1 {
@@ -239,7 +236,7 @@ img {
   font-weight: 400;
   padding: 15px 22px 14px 22px;
   background-color: #ffc045;
-  margin: 72px 401px 39px;
+  margin: 72px 39px 40px;
   font-weight: 400;
   color: #3d2514;
 }
@@ -249,15 +246,10 @@ img {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  margin: 0 auto;
 }
 .C-and-E {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   width: 75%;
   text-align: center;
@@ -265,7 +257,6 @@ img {
 #CandEText {
   font-size: 70px;
   font-weight: 400;
-  line-height: 37.5px;
   margin: 0;
   letter-spacing: 1 px;
   font-weight: bold;
@@ -275,7 +266,6 @@ img {
 .C-and-E p {
   font-size: 17px;
   font-weight: 400;
-  line-height: 29.17px;
   color: #3d2514;
   font-family: 'Montserrat', sans-serif;
 }
@@ -776,7 +766,7 @@ s;
     cursor: pointer;
   }
   .upcoming-events-grid {
-    max-width: 98%;
+    max-width: 90%;
     box-shadow: 19px 40px 43px rgba(0, 0, 0, 0.5);
   }
   .upcoming-events {
@@ -1129,6 +1119,8 @@ s;
     max-width: 100%;
     margin: 10px;
     padding: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .footerText {
     padding: 10px;
@@ -1156,6 +1148,7 @@ s;
     flex-direction: column;
     align-items: flex-start;
     max-height: 100%;
+    padding: 10px;
   }
   .copyRight {
     font-size: 15px;
