@@ -10,7 +10,6 @@ img {
   max-width: 100%;
 }
 .hero-container {
-  margin: 0 auto;
   padding: 0;
   width: 100%;
 }
@@ -31,7 +30,7 @@ img {
   display: none;
 }
 .hamburgerMenu {
-  width: 80%;
+  width: 90%;
   min-width: 150px;
 }
 .header {
@@ -41,7 +40,6 @@ img {
 .navigationBar {
   display: flex;
   flex-direction: row;
-  max-width: 100%;
   justify-content: space-around;
   margin: 0 auto;
   font-family: 'Bebas Neue', cursive;
@@ -143,7 +141,7 @@ img {
   align-items: center;
   background-color: white;
   max-width: 100%;
-  padding: 78px 15px;
+  padding: 78px 15px 20px;
   margin: 0 auto;
 }
 .padding1 {
@@ -520,6 +518,7 @@ img {
 .footerText {
   flex: 1;
   text-align: left;
+  padding: 0 0 100px 0;
 }
 .footerText img {
   margin: 25px 0;
@@ -528,7 +527,7 @@ img {
   font-size: 17px;
   font-weight: 100;
   line-height: 25px;
-  padding: 0 0 16px 0;
+  padding: 0 0 20px 0;
   font-family: 'Montserrat', sans-serif;
 }
 .footerLocation {
@@ -538,6 +537,7 @@ img {
   flex: 1;
   align-items: flex-end;
   list-style: none;
+  padding: 30px 0;
 }
 .footerLocation li {
   display: flex;
@@ -776,7 +776,8 @@ s;
     cursor: pointer;
   }
   .upcoming-events-grid {
-    max-width: 100%;
+    max-width: 98%;
+    box-shadow: 19px 40px 43px rgba(0, 0, 0, 0.5);
   }
   .upcoming-events {
     align-items: center;
@@ -787,7 +788,7 @@ s;
   }
   .dots-column {
     width: 80%;
-    align-items: center;
+    align-items: flex-start;
   }
   .upcoming1 {
     padding: 0;
@@ -1082,27 +1083,32 @@ s;
   }
   .booking-form {
     display: flex;
-    flex-direction: row;
-    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .booking-form form input {
+    width: 90%;
   }
   .form1 {
     display: flex;
     flex-direction: column;
-    width: 49%;
+    width: 90%;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   }
   .form2 {
     display: flex;
     flex-direction: column;
-    width: 49%;
+    width: 90%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .booking-form form input {
-    width: 100%;
+    width: 90%;
     padding: 15px 15px;
-    margin: 20px 0;
+    margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #bebebe;
     background-color: transparent;
@@ -1110,7 +1116,7 @@ s;
   .form2 button {
     padding: 9px 15px;
     margin: 20px 0;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     background-color: #bf2222;
     color: white;
@@ -1125,7 +1131,7 @@ s;
     padding: 5px;
   }
   .footerText {
-    padding: 0;
+    padding: 10px;
   }
   .footerText p {
     padding: 0;
@@ -1138,6 +1144,7 @@ s;
   .footerLocation {
     align-items: flex-start;
     font-size: 16px;
+    padding: 35px 10px;
   }
   .footerLocation li {
     width: 100%;
@@ -1174,16 +1181,15 @@ s;
     flex: none;
   }
   .navigationBar {
-    justify-content: space-between;
+    max-width: 100%;
   }
   .burger-week {
     padding-right: 50px;
   }
   .headerWrapper {
-    justify-content: space-around;
+    justify-content: center;
   }
   .padding1 {
-    width: 65%;
     padding: 0;
   }
   .booking-form {
@@ -1223,5 +1229,19 @@ s;
   }
   .socialMedia i {
     font-size: 30px;
+  }
+  .footerText p {
+    width: 80%;
+  }
+  .footerLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+  }
+  .footerLocation li {
+    display: flex;
+    align-items: center;
   }
 }
